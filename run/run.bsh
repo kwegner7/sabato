@@ -1,0 +1,129 @@
+#!/bin/bash
+
+############################################################################
+# sites.google.com/site/tztredo
+# I have created a Google email account called "tz.tredo@gmail.com"
+# The password is "sabato77"
+# I created a website under this Google account.
+# To see the Tredo Website:
+#    http://sites.google.com/site/tztredo
+############################################################################
+
+############################################################################
+# From the ./src folder, generate the ./html folder
+# The folders ./publish/css and ./publish/images are fixed
+############################################################################
+
+cd ..
+if true
+then
+    cat src/index1.html    src/welcome.html src/index2.html  \
+      | sed "s@class=TextButton>PICTURES@class=SelectedButton>PICTURES@" \
+      > publish/tredo.html
+
+    cat publish/tredo.html \
+      | sed "s@location='@location='publish/@" \
+      | sed 's@src="@src="publish/@' \
+      | sed 's@href="@href="publish/@' \
+      > index.html
+
+    cat src/index1.html      src/about.html src/index2.html \
+      | sed "s@class=TextButton>ABOUT THE SHADE@class=SelectedButton>ABOUT THE SHADE@" \
+      > publish/about.html
+
+    cat src/index1.html   src/location.html src/index2.html  \
+      | sed "s@class=TextButton>LOCATION@class=SelectedButton>LOCATION@" \
+      > publish/location.html 
+
+    cat src/index1.html        src/aim.html src/index2.html  \
+      | sed "s@class=TextButton>AIM@class=SelectedButton>AIM@" \
+      > publish/aim.html 
+
+    cat src/index1.html src/objectives.html src/index2.html  \
+      | sed "s@class=TextButton>OBJECTIVES@class=SelectedButton>OBJECTIVES@" \
+      > publish/objectives.html 
+
+    cat src/index1.html     src/vision.html src/index2.html  \
+      | sed "s@class=TextButton>VISION@class=SelectedButton>VISION@" \
+      > publish/vision.html 
+
+    cat src/index1.html    src/mission.html src/index2.html  \
+      | sed "s@class=TextButton>MISSION@class=SelectedButton>MISSION@" \
+      > publish/mission.html
+
+    cat src/index1.html    src/history.html src/index2.html  \
+      | sed "s@class=TextButton>HISTORY@class=SelectedButton>HISTORY@" \
+      > publish/history.html 
+
+    cat src/index1.html    src/sponsor.html src/index2.html  \
+      | sed "s@class=TextButton>SPONSOR A CHILD /<br>GET INVOLVED@class=SelectedButton>SPONSOR A CHILD /<br>GET INVOLVED@" \
+      > publish/sponsor.html 
+
+    cat src/index1.html   src/founders.html src/index2.html \
+      | sed "s@class=TextButton>ABOUT THE FOUNDERS@class=SelectedButton>ABOUT THE FOUNDERS@" \
+      > publish/founders.html 
+
+    cat src/index1.html    src/contact.html src/index2.html  \
+      | sed "s@class=TextButton>CONTACT US@class=SelectedButton>CONTACT US@" \
+      > publish/contact.html 
+
+    cat src/index1.html     src/member.html src/index2.html  \
+      | sed "s@class=TextButton>HOW TO BECOME<br>A MEMBER@class=SelectedButton>HOW TO BECOME<br>A MEMBER@" \
+      > publish/member.html 
+
+    cat src/index1.html   src/picture2.html src/index2.html \
+      | sed "s@class=TextButton>PICTURES@class=SelectedButton>PICTURES@" \
+      > publish/picture2.html
+
+    cat src/index1.html   src/picture3.html src/index2.html \
+      | sed "s@class=TextButton>PICTURES@class=SelectedButton>PICTURES@" \
+      > publish/picture3.html
+
+    cat src/index1.html   src/picture4.html src/index2.html \
+      | sed "s@class=TextButton>PICTURES@class=SelectedButton>PICTURES@" \
+      > publish/picture4.html
+
+    cat src/index1.html   src/picture5.html src/index2.html \
+      | sed "s@class=TextButton>PICTURES@class=SelectedButton>PICTURES@" \
+      > publish/picture5.html
+
+    cat src/index1.html   src/picture6.html src/index2.html \
+      | sed "s@class=TextButton>PICTURES@class=SelectedButton>PICTURES@" \
+      > publish/picture6.html
+
+    cat src/index1.html   src/picture7.html src/index2.html \
+      | sed "s@class=TextButton>PICTURES@class=SelectedButton>PICTURES@" \
+      > publish/picture7.html
+
+    cat src/index1.html   src/picture8.html src/index2.html \
+      | sed "s@class=TextButton>PICTURES@class=SelectedButton>PICTURES@" \
+      > publish/picture8.html
+
+    cat src/index1.html   src/picture9.html src/index2.html \
+      | sed "s@class=TextButton>PICTURES@class=SelectedButton>PICTURES@" \
+      > publish/picture9.html
+
+fi
+
+if false
+then
+    IFS=$'\n'
+    for TXT in `find src/*.txt -print`
+    do
+        echo $TXT
+        mv $TXT src/`basename $TXT '.txt'`.html
+    done
+    IFS=$'\x20\t\n'
+fi
+
+if false
+then
+    cat FromSabato.txt >      about.txt 
+    cat FromSabato.txt >   location.txt 
+    cat FromSabato.txt >        aim.txt 
+    cat FromSabato.txt > objectives.txt 
+    cat FromSabato.txt >     vision.txt
+    cat FromSabato.txt >    mission.txt 
+    cat FromSabato.txt >    history.txt 
+fi
+

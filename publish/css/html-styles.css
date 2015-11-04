@@ -1,0 +1,390 @@
+/***********************************************************************
+* styles
+***********************************************************************/
+
+/*
+*:not (button) {
+  margin:0px;
+  border:0px;
+  padding:0px;
+  }
+
+
+* {
+  margin:0px;
+  border:0px;
+  padding:0px;
+  }
+*/
+
+body {
+	margin:0px 0px;   /* bottom and top margins for main window */
+    padding:0px;       /* margin and padding to get consistency between browsers. */
+	text-align:center; /* correction for poor behavior of IE5/Win */
+	}
+
+#OutermostIsCentered {
+	margin:0px auto; /* right and left margin "auto" */
+	text-align:left; /* correction for poor behavior of IE5/Win */
+	}
+
+/***********************************************************************
+* define the divs
+***********************************************************************/
+.DivOutermost {
+	margin:0px;
+    border:2px double red;
+    border:0px;
+	padding:0px;
+
+	width:1050px;
+    text-align:center;
+	}
+
+.DivRow1 {
+	margin:0px;
+    border:0px;
+	padding:0px;
+
+	width:inherit;
+    height:27px;
+
+    text-align:center;
+    }
+
+
+.DivRow3 {
+	margin:0px;
+    border:0px;
+	padding:0px;
+
+	width:inherit;
+    height:30px;
+
+    text-align:center;
+    clear:both;
+    }
+
+.DivRow2 { margin:0px;
+  width:inherit; height:600px;   text-align:center; float:none; }
+
+.DivRow2Col1 {
+  width:200px;   height:inherit; text-align:center; float:left; }
+
+.DivRow2Col2 { padding:5px; background-color:#EEEEEE; overflow:visible; overflow:auto;
+  width:610px;   height:inherit; text-align:left;   float:left; }
+
+.DivRow2Col2Row1 {
+  width:inherit;   height:550px; text-align:left;   float:none; }
+
+.DivRow2Col2Row2 {
+  width:inherit;   height:50px; text-align:center;  float:none; }
+
+.DivRow2Col3
+{
+	margin:0px;
+    border:0px;
+	padding:0px;
+
+    width:200px;
+    height:inherit;
+
+    text-align:center;
+    float:left;
+    }
+
+.DivButton {
+	margin:0px;
+    border:0px;
+	padding:0px;
+
+    width:inherit;
+    height:85px;
+
+    text-align:center;
+    float:down;
+    }
+
+/***********************************************************************
+* define the style of the contents
+***********************************************************************/
+
+.TextOutermost
+{
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:14pt;
+    font-weight:normal;
+    text-decoration:none;
+    text-align:center;
+    color:black;
+    line-height:150%
+}
+
+.TextRow1
+{
+    font-weight:bold;
+    font-style:italic;
+    font-size:16pt;
+    text-decoration:underline;
+    color:black;
+}
+
+.TitleRow2Col2 {
+    font-weight:bold;
+    text-decoration:normal;
+    color:green;
+	padding:10px;
+    text-align:center;
+    }
+
+.TextRow2Col2 {
+    font-weight:normal;
+    text-decoration:normal;
+    color:green;
+	padding:10px;
+    text-align:left;
+    }
+
+.TextRow2Col2Center {
+    font-weight:normal;
+    text-decoration:normal;
+    color:green;
+	padding:10px;
+    text-align:center;
+    }
+
+.TextRow3
+{
+    font-weight:bold;
+    font-style:italic;
+    font-size:16pt;
+    text-decoration:none;
+    color:black;
+}
+
+.TextButton
+{
+    font-weight:bold;
+    text-decoration:normal;
+    color:#00008B; /* DarkBlue */
+    background-color:white;
+}
+
+.SelectedButton
+{
+    font-weight:bold;
+    text-decoration:normal;
+    color:#006400; /* DarkGreen */
+    background-color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************
+* Styles for HTML default types
+***********************************************************************
+
+.buttons1
+{
+    font-weight:bold;
+    text-decoration:normal;
+    text-align:center;
+    color:blue;
+    height:85px;
+    width:200px;
+    background-color:lightgreen;
+    padding-left:0pt;
+    padding-right:0pt;
+}
+
+.buttons2
+{
+    font-weight:bold;
+    text-decoration:normal;
+    text-align:center;
+    color:blue;
+    height:85px;
+    width:200px;
+    background-color:lightgreen;
+    padding-left:0pt;
+    padding-right:0pt;
+}
+
+.content
+{
+    font-weight:normal;
+    text-decoration:normal;
+    text-align:left;
+    color:green;
+    padding-left:10pt;
+    padding-right:10pt;
+}
+
+
+.contentTitle
+{
+    font-weight:bold;
+    text-decoration:underline;
+    text-align:center;
+    color:blue;
+}
+
+
+body {font-size:100%} /* 1em is 16px, this method allows browser to adjust nicely *
+h1 {font-family:Verdana; color:green; font-size:0.875em; text-align:left; margin-left:0px;  line-height:150%; page-break-before:always}
+h2 {font-family:Verdana; color:green; font-size:0.875em; text-align:left; margin-left:0px;  line-height:150%}
+h3 {font-family:Verdana; color:green; font-size:0.875em; text-align:left; margin-left:0px;  line-height:150%}
+h4 {font-family:Verdana; color:green; font-size:0.875em; text-align:left; margin-left:0px;  line-height:150%}
+p  {font-family:Verdana, Geneva, sans-serif; color:black; font-size:0.75em; text-align:left; margin-left:20px; line-height:150%}
+ul {font-family:Verdana; color:black; font-size:0.75em; padding-left:50pt; padding-right:50pt; line-height:150%}
+ol {font-family:Verdana; color:black; font-size:0.75em; padding-left:50pt; padding-right:50pt; line-height:150%}
+pre {font-family:Courier, Geneva, sans-serif; color:black; font-size:0.75em; text-align:left; margin-left:20px; line-height:150%}
+
+/***********************************************************************
+* Styles for special types
+***********************************************************************
+.contentA
+{
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:8pt;
+    font-weight:bold;
+    text-decoration:underline;
+    text-align:left;
+    color:purple;
+    margin-left:20px; 
+    line-height:150%
+}
+.main
+{
+    font-family:Verdana;
+    font-size:1.1em;
+    font-weight:bold;
+    /*
+    text-decoration:underline;
+    *
+    text-align:left;
+    color:black;
+    margin-left:0px; 
+    line-height:150%
+}
+.indented
+{
+    padding-left:20pt;
+    padding-right:20pt;
+    color:black;
+}
+.indent1
+{
+    padding-left:20pt;
+    padding-right:20pt;
+    color:black;
+}
+.indent2
+{
+    padding-left:40pt;
+    padding-right:20pt;
+    color:black;
+}
+.centered
+{
+    text-align : center;
+}
+
+ul.italic  {font-style:italic}
+
+p.normal  {font-style:normal}
+p.italic  {font-style:italic}
+p.oblique {font-style:oblique}
+p.normal  {font-weight:normal;}
+p.light   {font-weight:lighter;}
+p.thick   {font-weight:bold;}
+p.thicker {font-weight:900;}
+p.normal  {font-variant:normal;}
+p.small   {font-variant:small-caps;}
+
+p.overline    {text-decoration:overline;}
+p.linethrough {text-decoration:line-through;}
+p.underline   {text-decoration:underline;}
+p.blink       {text-decoration:blink;}
+
+p.visible {visibility:visible;}
+p.hidden {visibility:hidden;}
+
+
+.consolas
+{
+    font-family : Consolas;
+          color : brown;
+      font-size : 12px;
+     text-align : left;
+}
+.toc_new
+{
+    line-height : 150%;
+   padding-left : 20pt;
+          color : black; 
+}
+.toc
+{
+    line-height : 70%;
+   padding-left : 0pt;
+}
+.toc_indent1
+{
+    line-height : 70%;
+   padding-left : 18pt;
+}
+.toc_indent2
+{
+    line-height : 70%;
+   padding-left : 43pt;
+}
+.status
+{
+         color : red;
+     font-size : 10px;
+    text-align : right;
+}
+.jump_to_top
+{
+         color : black;
+     font-size : 12px;
+    text-align : right;
+}
+
+/***********************************************************************
+* Four levels of sub-paragraphs
+***********************************************************************
+.reset    {counter-reset:section1 0;}
+body      {counter-reset:section1 0;}
+h1        {counter-reset:section2 0;}
+h2        {counter-reset:section3 0;}
+h3        {counter-reset:section4 0;}
+h4        {counter-reset:section5 0;}
+
+/*
+h1:before {counter-increment:section1 1; content:counter(section1) ". ";}
+h2:before {counter-increment:section2 1; content:counter(section1) "." counter(section2) " ";}
+h3:before {counter-increment:section3 1; content:counter(section1) "." counter(section2) "." counter(section3) " ";}
+h4:before {counter-increment:section4 1; content:counter(section1) "." counter(section2) "." counter(section3) "." counter(section4) " ";}
+*
+
+h1:before {counter-increment:section1 1;}
+h2:before {counter-increment:section2 1;}
+h3:before {counter-increment:section3 1;}
+h4:before {counter-increment:section4 1;}
+
+*/
