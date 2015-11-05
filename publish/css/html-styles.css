@@ -37,7 +37,7 @@ body {
     border:0px;
 	padding:0px;
 
-	width:1050px;
+	width:1150px;
     text-align:center;
 	}
 
@@ -66,16 +66,16 @@ body {
     }
 
 .DivRow2 { margin:0px;
-  width:inherit; height:600px;   text-align:center; float:none; }
+  width:inherit; height:700px;   text-align:center; float:none; }
 
 .DivRow2Col1 {
   width:200px;   height:inherit; text-align:center; float:left; }
 
 .DivRow2Col2 { padding:5px; background-color:#EEEEEE; overflow:visible; overflow:auto;
-  width:610px;   height:inherit; text-align:left;   float:left; }
+  width:710px;   height:inherit; text-align:left;   float:left; }
 
 .DivRow2Col2Row1 {
-  width:inherit;   height:550px; text-align:left;   float:none; }
+  width:inherit;   height:650px; text-align:left;   float:none; }
 
 .DivRow2Col2Row2 {
   width:inherit;   height:50px; text-align:center;  float:none; }
